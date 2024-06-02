@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          IMPRO
+          impro
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
