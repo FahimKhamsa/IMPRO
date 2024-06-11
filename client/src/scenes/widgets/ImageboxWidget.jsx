@@ -45,7 +45,6 @@ const ImageboxWidget = ({
   undoChange,
   redoChange,
   saveImage,
-  downloadImage,
 }) => {
   const imageHandle = (event) => {
     if (event.target.files.length !== 0) {
