@@ -27,7 +27,7 @@ const FlexBetween = styled(Box)({
   width: "100%",
 });
 
-const SidebarWidget = ({ filterElements, selectFilter, handleText }) => {
+const SidebarWidget = ({ filterElements, selectFilter }) => {
   const getIconSource = (name) => {
     switch (name) {
       case "brightness":
@@ -82,21 +82,6 @@ const SidebarWidget = ({ filterElements, selectFilter, handleText }) => {
                 {index === filterElements.length - 1 && <Divider />}
               </React.Fragment>
             ))}
-            <ListItemButton onClick={() => handleText()}>
-              <ListItemIcon
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src="http://localhost:3000/toolsIcons/Text.png"
-                  alt="Text"
-                />
-              </ListItemIcon>
-            </ListItemButton>
-            <Divider />
           </List>
         </Box>
       </FlexBetween>
